@@ -21,12 +21,42 @@
 
 
 
-    <div class="container border border-2 rounded p-5">
+    <div class="container w-50 border border-2 rounded p-5">
         <form action="" class="form">
-            <label for="name">Name</label>
-            <input class="form-control" type="text" id="name" placeholder="enter your name">
-            <label for="lastname">Last Name</label>
-            <input class="form-control outline-none" type="text" id="lastname" placeholder="enter lastname">
+            <h3 class="fw-bold text-center mb-3 ">Enter Your Information</h3>
+            <label class="form-label" for="name">Name & Lastname</label>
+            <input class="form-control" type="text" id="name" placeholder="Email your Name and Lastname">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control outline-none" type="email" id="email" placeholder="Enter Email">
+            <label class="form-label" for="Country">Country</label>
+            <select class="form-control" name="country" id="country">
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Germany">Germany</option>
+                <option value="England">England</option>
+                <option value="Schweiz">Schweiz</option>
+            </select>
+            <label for="six" class="form-label">Six</label>
+            <div class="d-flex justify-content-between">
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="male" name="gender">
+                    <label for="male" class="form-label">Male</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="female" name="gender">
+                    <label for="female" class="from-label">Female</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="div" name="gender" class="form-check-input">
+                    <label for="div" class="form-label">div</label>
+                </div>
+            </div>
+            <label for="text-area" class="form-label">Message</label>
+            <textarea name="text-area" id="text-area" class="form-control"></textarea>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="checkbox">
+                <label for="checkbox" class="form-label">Accept terms</label>
+            </div>
+            <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-danger">
         </form>
     </div>
 

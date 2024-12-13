@@ -18,51 +18,132 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-
-
-
     <div class="container w-50 border border-2 rounded p-5">
-        <form action="" class="form">
-            <h3 class="fw-bold text-center mb-3 ">Enter Your Information</h3>
-            <label class="form-label" for="name">Name & Lastname</label>
-            <input class="form-control" type="text" id="name" placeholder="Email your Name and Lastname">
-            <label class="form-label" for="email">Email</label>
-            <input class="form-control outline-none" type="email" id="email" placeholder="Enter Email">
-            <label class="form-label" for="Country">Country</label>
-            <select class="form-control" name="country" id="country">
-                <option value="Afghanistan">Afghanistan</option>
-                <option value="Germany">Germany</option>
-                <option value="England">England</option>
-                <option value="Schweiz">Schweiz</option>
-            </select>
-            <label for="six" class="form-label">Six</label>
-            <div class="d-flex justify-content-between">
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="male" name="gender">
-                    <label for="male" class="form-label">Male</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="female" name="gender">
-                    <label for="female" class="from-label">Female</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" id="div" name="gender" class="form-check-input">
-                    <label for="div" class="form-label">div</label>
-                </div>
-            </div>
-            <label for="text-area" class="form-label">Message</label>
-            <textarea name="text-area" id="text-area" class="form-control"></textarea>
+      <form action="" class="form">
+        <h3 class="fw-bold text-center mb-3">Enter Your Information</h3>
+        <div class="form-group">
+          <label class="form-label" for="name">Name & Lastname</label>
+          <input
+            class="form-control"
+            type="text"
+            id="name"
+            placeholder="Email your Name and Lastname"
+          />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input
+            class="form-control outline-none"
+            type="email"
+            id="email"
+            placeholder="Enter Email"
+          />
+        </div>
+        <div class="form-group my-2">
+          <div class="input-group">
+            <label for="nummber" class="input-group-text">+49</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="(0)152............."
+            />
+          </div>
+        </div>
+        <div class="form-group">
+            <label for="city" class="form-label">Your City</label>
+            <input
+              type="text"
+              list="datalistoption"
+              placeholder="search your city"
+              id="city"
+              class="form-control"
+            />
+            <datalist id="datalistoption">
+              <option value="aachen">Aachen</option>
+              <option value="bonn">Bonn</option>
+              <option value="köln">köln</option>
+              <option value="düsseldorf">Düsseldorf</option>
+              <option value="mönchengladbach">Mönchengladbach</option>
+              <option value="geilenkirchen">Geilenkirchen</option>
+              <option value="Hezogenrath">Hezogenrath</option>
+              <option value="Erklenz">Erklenz</option>
+              <option value="Vechta">Vechta</option>
+              <option value="Bremen">Bremen</option>
+              <option value="Hamburg">Hamburg</option>
+              <option value="Berlin">Berlin</option>
+            </datalist>
+          </div>
+
+         <div class="form-group">
+          <label class="form-label" for="Country">Country</label>
+          <select class="form-control" name="country" id="country">
+            <option value="Afghanistan">Afghanistan</option>
+            <option value="Germany">Germany</option>
+            <option value="England">England</option>
+            <option value="Schweiz">Schweiz</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="six" class="form-label">Six</label>
+          <div class="d-flex justify-content-between">
             <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="checkbox">
-                <label for="checkbox" class="form-label">Accept terms</label>
+              <input
+                type="radio"
+                class="form-check-input"
+                id="male"
+                name="gender"
+              />
+              <label for="male" class="form-label">Male</label>
             </div>
-            <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-danger">
-        </form>
+            <div class="form-check">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="female"
+                name="gender"
+              />
+              <label for="female" class="from-label">Female</label>
+            </div>
+            <div class="form-check">
+              <input
+                type="radio"
+                id="div"
+                name="gender"
+                class="form-check-input"
+              />
+              <label for="div" class="form-label">div</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="text-area" class="form-label">Message</label>
+          <textarea
+            name="text-area"
+            id="text-area"
+            class="form-control"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkbox" />
+            <label for="checkbox" class="form-label">Accept terms</label>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="">
+            <input type="file" class="form-control" id="file" />
+          </div>
+          <span class="input-group-append">@</span>
+        </div>
+        <input
+          type="submit"
+          name="submit"
+          id="submit"
+          value="Submit"
+          class="btn btn-danger"
+        />
+      </form>
     </div>
-
-
-
-
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
